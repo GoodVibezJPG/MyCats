@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Stylesheet Links -->
+    <link rel="stylesheet" type='text/css' href='css/style.css'>
+    <link rel="stylesheet" type='text/css' href='css/red-style.css'>
+    
+    <!--Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A website dedicated to showcasing my cats with information, facts, gallery, and videos.">
+    <meta name="keywords" content="cats, pets, gallery, videos, facts, support, book visit">
+    <meta name="author" content="Caleb M. Irvine">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link href="css/fontawesome/css/fontawesome.css" rel="stylesheet"/>
+    <link href="css/fontawesome/css/brands.css" rel="stylesheet"/>
+    <link href="css/fontawesome/css/solid.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel ="icon" href = "images/cat.png" type = "image/x-icon">
+    <title>My Cats</title>
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <input type="checkbox" id="red-mode-toggle" name="page-theme">
+    <div id="red-mode-box">
+        <label for="red-mode-toggle" id="red-mode-label">💖</label>
+    </div>
+    <!-- Navigation Header -->
+    <header>
+        <div class="container">
+            <div class="branding">
+                <h1><a href="#">My Cats</a></h1>
+            </div>
+            <nav>
+                <label for="menu-toggle">&#9776;</label>
+                <input type="checkbox" id="menu-toggle">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#facts">Facts</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#support">Support</a></li>
+                    <li><a href="#book-visit">Book Visit</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="showcase">
+            <div class="container">
+                <h1>My Cats</h1>
+                <button><a href="#about">See More</a></button>
+                <video autoplay loop muted>
+                    <source src="images/cat-video.mp4" type="video/mp4" alt="landscape video of cat looking at camera">
+                </video>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <h1>About</h1>
+            <div class="portrait-gallery">
+                <div class="about-box">
+                    <img src="images/wobbly/Wobbly-Sink.jpeg" alt="Wobbly in a sink">
+                    <h3>Wobbly</h3>
+                    <p>Wobbly is recently two years. A Siberean cat who is friendly and playful, and can't stay away from trouble. He also wobbles when he eats.</p>
+                </div>
+                <div class="about-box">
+                    <img src="images/moose/moose-portrait.jpg" alt="Moose portrait">
+                    <h3>Moose</h3>
+                    <p>Moose is a 3 1/2 year-old short-hair rescue cat. He is very affectionate with those he knows, but is nervous and skittish around those who he doesn't.</p>
+                </div>
+                <div class="about-box">
+                    <img src="images/precious/precious-portrait.jpg" alt="Precious with food toys">
+                    <h3>Precious</h3>
+                    <p>Sibling of Moose from the same litter. She is the only girl in the group so she doesn't get pushed around. Her and Wobbly have beef with each other.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="facts">
+        <div class="container">
+            <h1>Facts</h1>
+            <p id="descr">Here are some facts about our cats!</p>
+            <div id="fact-container">
+                <div class="fact-box">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <h2>Fact 1:</h2>
+                    <p>Wobbly has an appetite for human food. He enjoys popcorn, oatmeal, and hummus just to name a few.</p>
+                </div>
+                <div class="fact-box">
+                    <i class="fas fa-paw"></i>
+                    <h2>Fact 2:</h2>
+                    <p>Wobbly is called "wobbly" because when he eats or plays his head wobbles aggresively (it's not medically serious).</p>
+                </div>
+                <div class="fact-box">
+                    <i class="fa-solid fa-cow"></i>
+                    <h2>Fact 3:</h2>
+                    <p>Moose's name is often shortened to Moo because of his cow pattern.</p>
+                </div>
+                <div class="fact-box">
+                    <i class="fas fa-cat"></i>
+                    <h2>Fact 4:</h2>
+                    <p>Precious weighs 15 pounds.</p>
+                </div>
+                <div class="fact-box">
+                    <i class="fas fa-heart"></i>
+                    <h2>Fact 5:</h2>
+                    <p>Despite not being realted, Moose and Wobbly share a brotherly bond, and will often rest and look for each other.</p>
+                </div>
+                <div class="fact-box">
+                    <i class="fa-solid fa-crown"></i>
+                    <h2>Fact 6:</h2>
+                    <p>All the cats are indoor cats; although Wobbly jumps out a window and cries outside sometimes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery">
+        <div class="container">
+            <h1>Gallery</h1>
+            <p>Check out my cats!</p>
+            <div id="gallery-container">
+                <div class="gallery-box">
+                    <img src="images/wobbly/Wobbly-chill.jpg" alt="Wobbly leaning back">
+                    <button onclick="window.location.href='images/wobbly/Wobbly-chill.jpg'">Click Me</button>
+                </div>
+                <div class="gallery-box">
+                    <img src="images/cat-group/moose&wob.JPG" alt="Moose and Wobbly chilling">
+                    <button onclick="window.location.href='images/cat-group/moose&wob.JPG'">Click Me</button>
+                </div>
+                <div class="gallery-box">
+                    <img src="images/wobbly/wob-derp.jpg" alt="Wobbly looking derpy">
+                    <button onclick="window.location.href='images/wobbly/wob-derp.jpg'">Click Me</button>
+                </div>
+                <div class="gallery-box">
+                    <img src="images/cat-group/moose-wob2.jpg" alt="Moose and Wobbly cuddling">
+                    <button onclick="window.location.href='images/cat-group/moose-wob2.jpg'">Click Me</button>
+                </div>
+                <div class="gallery-box">
+                    <img src="images/wobbly/Wobbly-sleep.jpg" alt="Wobbly Sleeping">
+                    <button onclick="window.location.href='images/wobbly/Wobbly-sleep.jpg'">Click Me</button>
+                </div>
+                <div class="gallery-box">
+                    <img src="images/precious/precious.jpg" alt="Precious in the laundry">
+                    <button onclick="window.location.href='images/precious/precious.jpg'">Click Me</button>
+                </div>
+                <div class="gallery-box">
+                    <img src="images/precious/scary-prec.jpg" alt="Angry Precious">
+                    <button onclick="window.location.href='images/precious/scary-prec.jpg'">Click Me</button>
+                </div>
+                <div class="gallery-box">
+                    <img src="images/moose/moose-scary.jpg" alt="Angry Moose">
+                    <button onclick="window.location.href='images/moose/moose-scary.jpg'">Click Me</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="videos">
+        <div class="container">
+            <h1>Videos</h1>
+            <p>Check out my cats in action!</p>
+            <div id="video-container">
+                <div class="video-box">
+                    <video width="320" height="240" playsinline muted autoplay loop>
+                        <source src="images/wobbly/wobbly_banana.mp4" type="video/mp4" alt="Wobbly attacking banana">
+                    </video>
+                </div>
+                <div class="video-box">
+                    <video width="320" height="240" playsinline muted autoplay loop>
+                        <source src="images/wobbly/wobbly_wine.MOV" type="video/mp4" alt="Wobbly licking a bottle">
+                    </video>
+                </div>
+                <div class="video-box">
+                    <video width="320" height="240" playsinline muted autoplay loop>
+                        <source src="images/wobbly/wobbly_kick.mp4" type="video/mp4" alt="Wobbly playing with a kicker toy">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="support">
+        <div class="container">
+            <h1>Support</h1>
+            <p>Support our cats with pets please!</p>
+                <div class ="support-box">
+                    <div class="support-text">
+                        <h2>Support Our Cats</h2>
+                        <p>We love our cats. Please donate a pet. One Pet = One Heart 😊💗 </p>
+                        <!-- Pet Animation Toggle -->
+                        <label for="pet-check" id="pet-button">Pet $0</label>
+                        <input type="checkbox" id="pet-check" name="pet-check">
+                        <img id="pet-cat" src="images/Petpet Transparent.gif" alt="gif of hand petting">
+                    </div>
+                    <div class="support-media">
+                        <img id="cat-eat" src="images/Adorable Persian Cat.jpg" alt="cat2">
+                    </div>
+                </div>
+        </div>
+    </section>
+    <section id="book-visit">
+        <div class="container">
+            <!-- Contact Form -->
+            <h1>Book Visit</h1>
+            <div id="book-visit-box">
+                <form>
+                    <h3>Book a visit with our cats!</h3>
+                    <input type="text" id="name" name="name" placeholder="name:" required>
+                    <input type="email" id="email" name="email" placeholder="email:" required>
+                    <input type="tel" id="phone" name="phone" placeholder="phone:" required>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+ <!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2024 My Cats - Caleb M. Irvine - C0522047</p>
+    </div>
+</footer>
+</body>
+</html>

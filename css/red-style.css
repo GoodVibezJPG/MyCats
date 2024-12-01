@@ -1,0 +1,314 @@
+:root{ /* Red Mode */
+    --misty-rose: #ffe5ecff;
+    --pink: #ffc2d1ff;
+    --cherry-blossom-pink: #ffb3c6ff;
+    --bakermiller-pink: #ff8fabff;
+    --rose-pompadour: #fb6f92ff;
+    --space-cadet: #2a2d43ff;
+    --white: #ffffff;
+}
+
+#red-mode-box{ /* Red Mode */
+    height: 20px;
+    width: 30px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1000;
+    background-color: var(--space-cadet);
+    color: var(--white);
+    padding: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 5px;
+    overflow: auto hidden;
+}
+#red-mode-box:hover{ 
+    background-color: var(--rose-pompadour);
+    transition: 0.5s;
+}
+#red-mode-box:active{
+    background-color: var(--space-cadet);
+    transition: 0.5s;
+}
+#red-mode-box p{
+    margin: 0;
+    font-size: 1.25rem;
+}
+#red-mode-box p:hover{
+    color: var(--misty-rose);
+    transition: 0.5s;
+}
+
+#red-mode-toggle{ 
+    display: none;
+}
+#red-mode-toggle:checked ~ #red-style{
+    display: block;
+}
+#red-mode-toggle:checked ~ #red-mode-box{
+    background-color: var(--rose-pompadour);
+    transition: 0.5s;
+}
+#red-mode-toggle:checked ~ #red-mode-box p{
+    color: var(--misty-rose);
+    transition: 0.5s;
+}
+#red-mode-toggle:checked ~ #red-mode-box:hover{
+    background-color: var(--space-cadet);
+    transition: 0.5s;
+}
+#red-mode-toggle:checked ~ #red-mode-box:active{
+    background-color: var(--rose-pompadour);
+    transition: 0.5s;
+}
+#red-mode-toggle:checked ~ #red-mode-box p:hover{
+    color: var(--white);
+    transition: 0.5s;
+}
+
+
+/* Red Mode GeneraL Style */
+#red-mode-toggle:checked ~ *{
+    background-color: var(--misty-rose);
+    color: var(--rose-pompadour);
+    font-family: "Playwrite GB S", cursive;
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/*Fade in Animation*/
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*Body*/
+#red-mode-toggle:checked ~ * h1{
+    background-color: var(--bakermiller-pink);
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+#red-mode-toggle:checked ~ * p{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+#red-mode-toggle:checked ~ * h3{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+#red-mode-toggle:checked ~ * button{
+    background-color: var(--rose-pompadour);
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: "Playwrite GB S", cursive;
+}
+#red-mode-toggle:checked ~ * button:hover{
+    background-color: var(--bakermiller-pink);
+    color: var(--white);
+    transition: 0.5s;
+}
+
+
+/*Header*/
+#red-mode-toggle:checked ~ header{
+    border-bottom: 5px solid var(--misty-rose);
+    background-color: var(--rose-pompadour);
+}
+#red-mode-toggle:checked ~ header nav ul li a{
+    color: var(--white);
+}
+#red-mode-toggle:checked ~ header h1{
+    background-color: var(--bakermiller-pink);
+}
+#red-mode-toggle:checked ~ header nav ul{
+    border-color: var(--misty-rose);
+}
+#red-mode-toggle:checked ~ header nav ul li a:hover{
+    color: var(--white);
+    background-color: var(--pink);
+}
+#red-mode-toggle:checked ~ header nav label{
+    color: var(--white);
+}
+
+
+/*Showcase*/
+#red-mode-toggle:checked ~ * #showcase h1{
+    color: var(--white);
+    background-color: var(--bakermiller-pink);
+    padding: 20px;
+}
+
+
+/*About*/
+#red-mode-toggle:checked ~ * #about{
+    background-color: var(--pink);
+}
+#red-mode-toggle:checked ~ * #about h1{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+#red-mode-toggle:checked ~ * #about .about-box{
+    background-color: var(--misty-rose);
+    color: var(--rose-pompadour);
+}
+#red-mode-toggle:checked ~ * #about .portrait-gallery{
+    background-color: var(--pink);
+    border-color: var(--white);
+}
+
+
+
+/*Facts*/
+#red-mode-toggle:checked ~ * #facts #descr{
+    color: var(--rose-pompadour);
+    padding: 5px 10px;
+    margin: 10px;
+}
+#red-mode-toggle:checked ~ * #facts p{
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--white);
+}
+#red-mode-toggle:checked ~ * .fact-box{
+    background-color: var(--pink);
+    color: var(--rose-pompadour);
+    overflow-y: hidden;
+}
+#red-mode-toggle:checked ~ * .fact-box h2{
+    padding: 5px 10px;
+    border-radius: 5px;
+    overflow-y: hidden;
+}
+#red-mode-toggle:checked ~ * .fact-box i{
+    padding: 5px 10px;
+    border-radius: 5px;
+    overflow-y: hidden;
+}
+#red-mode-toggle:checked ~ * .fact-box p{
+    padding: 5px 10px;
+    border-radius: 5px;
+    overflow-y: hidden;
+}
+
+/*Gallery*/
+#red-mode-toggle:checked ~ * #gallery p{
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--rose-pompadour);
+}
+#red-mode-toggle:checked ~ * #gallery{
+    color: var(--rose-pompadour);
+    background: var(--white);
+}
+#red-mode-toggle:checked ~ * section #gallery{
+    background-color: var(--white);
+    
+}
+
+
+/*Videos*/
+#red-mode-toggle:checked ~ * #videos{
+    background-color: var(--pink);
+    color: var(--rose-pompadour);
+}
+#red-mode-toggle:checked ~ * #videos .video-box{
+    background-color: var(--misty-rose);
+    color: var(--rose-pompadour);
+
+}
+
+
+/*Support*/
+#red-mode-toggle:checked ~ * #support{
+    background: var(--white);
+    color: var(--rose-pompadour);
+}
+#red-mode-toggle:checked ~ * #support p{
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--rose-pompadour);
+}
+#red-mode-toggle:checked ~ * #support .support-text{
+    background-color: var(--pink);
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+#red-mode-toggle:checked ~ * #support .support-box{
+    background-color: var(--misty-rose);
+    color: var(--rose-pompadour);
+}
+#red-mode-toggle:checked ~ * #support .support-text h2{
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--rose-pompadour);
+}
+#red-mode-toggle:checked ~ * #support .support-box label{
+    background-color: var(--rose-pompadour);
+    color: var(--white);
+}
+#red-mode-toggle:checked ~ * #support .support-box label:hover{
+    background-color: var(--bakermiller-pink);
+    color: var(--white);
+    transition: 0.5s;
+}
+#red-mode-toggle:checked ~ * #support .support-box p{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+/* Book a Visit */
+#red-mode-toggle:checked ~ * #book-visit{
+    background-color: var(--pink);
+    color: var(--white);
+}
+#red-mode-toggle:checked ~ * #book-visit-box{
+    border-color: var(--white);
+}
+#red-mode-toggle:checked ~ * #book-visit label{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+#red-mode-toggle:checked ~ * #book-visit form{
+    background-color: var(--pink);
+    color: var(--white);
+}
+#red-mode-toggle:checked ~ * #book-visit input{
+    background-color: var(--misty-rose);
+    border: 3px solid var(--bakermiller-pink);
+    color: var(--white);
+    padding: 5px;
+    border-radius: 5px;
+}
+#red-mode-toggle:checked ~ * #book-visit input::placeholder{
+    color: var(--white);
+}
+#red-mode-toggle:checked ~ * #book-visit input[type="submit"]{
+    background-color: var(--rose-pompadour);
+    color: var(--white);
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+
+#red-mode-toggle:checked ~ footer{
+    background-color: var(--rose-pompadour);
+    color: var(--white);
+}
+
+
+
+
